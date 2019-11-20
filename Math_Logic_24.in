@@ -1,0 +1,23 @@
+% Problema 24 - Math and Logic Puzzles
+% Paun Bogdan
+% 30231
+
+% mace4 -m -1 -f math_logic_24.in | interpformat
+
+set(arithmetic).
+
+% Un numar de 3 cifre := 
+% 	999 cea mai mare valoare.
+% 	100 cea mai mica valoare.
+
+assign(domain_size, 999). 
+
+% Number are fix 3 cifre.
+% x mod k = 0 -> x se imparte exact la k
+
+formulas(assumptions).
+	Number > 99.
+	(Number + 7) mod 7 = 0.
+	(Number + 8) mod 8 = 0.
+	(Number + 9) mod 9 = 0.
+end_of_list.

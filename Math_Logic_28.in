@@ -1,0 +1,18 @@
+% Problema 28 - Math and Logic Puzzles
+% Paun Bogdan
+% 30231
+
+set(arithmetic).
+
+% Valoarea maxima de chestnuts disponibile
+assign(domain_size, 20). 
+
+% Cei 3 baieti au impreuna 20 de chestnuts.
+% Billy are cu 3 mai multe decat Alan.
+% Billy are cu 5 mai putine decat Charlie.
+
+formulas(assumptions).
+ Billy + Alan + Charlie = 20.	
+ Billy = Alan + 3.	
+ Billy = Charlie + -5.	
+end_of_list.
